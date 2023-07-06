@@ -14,7 +14,7 @@ if reload == "y":
 x = None
 if len(ai_social_network.get_people()) >= 1:
     create1 = True
-    x = ai_social_network.get_people()[random.ranint(0, len(ai_social_network.get_people()) - 1)]
+    x = ai_social_network.get_people()[random.randint(0, len(ai_social_network.get_people()) - 1)]
     print("Currently accessing the account of " + x.get_name() + ".")
 
 #The line below is a python keyword to specify which 
