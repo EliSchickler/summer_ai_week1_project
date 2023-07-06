@@ -186,7 +186,7 @@ class Person:
         for i in range(len(self.friendlist)):
             print("\nName: ", self.friendlist[i].get_name())
             print("Messages: ")
-            if (random.randint(1,5) == 2) and (not(self.friendlist[i].get_message())) and (len(self.friendlist[i].get_inbox) % 2 == 1):
+            if (random.randint(1,5) == 2) and (not(self.friendlist[i].get_message())) and (len(self.friendlist[i].get_inbox()) % 2 == 1):
                 response = random.choice(npc)
                 self.friendlist[i].get_inbox().append(response)
                 self.friendlist[i].set_message(True)
